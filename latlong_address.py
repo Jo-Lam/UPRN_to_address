@@ -6,9 +6,9 @@ import os
 import csv
 
 # Splitting CSV 
-input_file = 'osopenuprn_202308.csv' # load in august release
+input_file = 'osopenuprn_202308.csv' # load in august release, 40 million rows.
 output_folder = 'raw_output_uprn_split'  # Change this to your desired folder name
-rows_per_file = 1000
+rows_per_file = 1000 # this should produce around 40,000 .csv files
 
 # Create the output folder if it doesn't exist
 if not os.path.exists(output_folder):
